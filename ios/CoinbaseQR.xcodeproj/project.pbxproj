@@ -15,7 +15,6 @@
 		00E356F31AD99517003FC87E /* CoinbaseQRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CoinbaseQRTests.m */; };
 		023462D02023CC800011ECB8 /* libAppAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 023462D12023CC800011ECB8 /* libAppAuth.a */; };
 		023462D22023CC800011ECB8 /* libRNAppAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832A92C61FC8329C00BC4A59 /* libRNAppAuth.a */; };
-		07968FA9205F6AEA00171326 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07968FA8205F6A8800171326 /* libRNCamera.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -127,13 +126,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
-		};
-		07968FA7205F6A8800171326 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 07968FA3205F6A8800171326 /* RNCamera.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
-			remoteInfo = RNCamera;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -331,7 +323,6 @@
 		00E356F21AD99517003FC87E /* CoinbaseQRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinbaseQRTests.m; sourceTree = "<group>"; };
 		023462D12023CC800011ECB8 /* libAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		023462D42023D0050011ECB8 /* libPods-CoinbaseQR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-CoinbaseQR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		07968FA3205F6A8800171326 /* RNCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* CoinbaseQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinbaseQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -368,7 +359,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07968FA9205F6AEA00171326 /* libRNCamera.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -470,14 +460,6 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		07968FA4205F6A8800171326 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				07968FA8205F6A8800171326 /* libRNCamera.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
@@ -610,7 +592,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				07968FA3205F6A8800171326 /* RNCamera.xcodeproj */,
 				13B07FAE1A68108700A75B9A /* CoinbaseQR */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* CoinbaseQRTests */,
@@ -823,10 +804,6 @@
 					ProductGroup = 832A92C21FC8329C00BC4A59 /* Products */;
 					ProjectRef = 600D1784631B41CEAF6511D7 /* RNAppAuth.xcodeproj */;
 				},
-				{
-					ProductGroup = 07968FA4205F6A8800171326 /* Products */;
-					ProjectRef = 07968FA3205F6A8800171326 /* RNCamera.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -914,13 +891,6 @@
 			fileType = archive.ar;
 			path = "libprivatedata-tvOS.a";
 			remoteRef = 023462CD2023C8BD0011ECB8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		07968FA8205F6A8800171326 /* libRNCamera.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNCamera.a;
-			remoteRef = 07968FA7205F6A8800171326 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
@@ -1370,7 +1340,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.formidable.CoinbaseQR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jt.CoinbaseQR;
 				PRODUCT_NAME = CoinbaseQR;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1397,7 +1367,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.formidable.CoinbaseQR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jt.CoinbaseQR;
 				PRODUCT_NAME = CoinbaseQR;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
