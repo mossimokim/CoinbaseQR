@@ -10,9 +10,7 @@
     "react": "16.0.0",
     "react-native": "0.50.3",
     "react-native-app-auth": "^2.0.0",
-    "react-native-camera": "^1.0.2",
     "react-native-qrcode": "^0.2.6",
-    "react-native-qrcode-scanner": "0.0.30",
     "styled-components": "^2.2.3"
   },
   "devDependencies": {

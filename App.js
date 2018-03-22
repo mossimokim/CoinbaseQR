@@ -7,7 +7,6 @@ import {
 } from 'react-native';
 import {authorize, refresh, revoke} from 'react-native-app-auth';
 import QRCode from 'react-native-qrcode';
-import QRCodeScanner from 'react-native-qrcode-scanner';
 
 import {Page, Button, ButtonContainer, Form, Heading} from './components';
 
