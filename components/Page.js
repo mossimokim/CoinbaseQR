@@ -3,7 +3,7 @@
 import styled from 'styled-components/native';
 
 export default styled.ImageBackground.attrs({
-  source: require('../assets/background.jpg')
+  source: require('../assets/background.png')
 })`
   flex: 1;
   background-color: white;
